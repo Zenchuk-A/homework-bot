@@ -70,7 +70,7 @@ def get_api_answer(timestamp):
         response = requests.get(
             ENDPOINT, headers=HEADERS, params={'from_date': timestamp}
         )
-    except requests.RequestException as e:
+    except requests.RequestException:
         raise EndpointErrorException(
             f'Эндпоинт {ENDPOINT} недоступен. '
             f'Код ответа API: {response.status_code}',
