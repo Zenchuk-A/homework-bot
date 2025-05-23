@@ -158,10 +158,7 @@ def main():
             else:
                 logger.debug('Отсутствуют новые статусы.')
 
-            if 'current_date' not in response:
-                timestamp = int(time.time())
-            else:
-                timestamp = response.get('current_date', timestamp)
+            timestamp = response.get('current_date', int(time.time()))
         except Exception as error:
             message = f'Сбой в работе программы: {error}'
             if message != previous_message:
