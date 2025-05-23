@@ -39,6 +39,7 @@ stream_handler.setFormatter(formatter)
 
 logger.addHandler(stream_handler)
 
+
 def check_tokens():
     """Check whether environment variables are available.
 
