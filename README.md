@@ -1,2 +1,20 @@
-# homework_bot
-python telegram bot
+## homework_bot - Telegram-бот, который обращается к API сервиса Практикум Домашка и узнаёт статус домашней работы
+
+### В основной директории проекта создайте файл .env с переменными окружения:
+```
+PRACTICUM_TOKEN = your_yandex_practicum_token
+TELEGRAM_TOKEN = your_telegram_token
+TELEGRAM_CHAT_ID = id_for_telegram_chat
+```
+
+### Стек технологий
+
+- **Python 3.12** — основной язык программирования.
+- **requests** — библиотека для выполнения HTTP-запросов к API.
+- **python-dotenv** — загрузка переменных окружения из файла `.env`.
+- **pyTelegramBotAPI (telebot)** — взаимодействие с Telegram Bot API.
+- **logging** — стандартный модуль для логирования работы приложения.
+- **API**:
+  - Яндекс.Практикум API — источник данных о статусах домашних работ.
+  - Telegram Bot API — отправка уведомлений в Telegram.
+- **Среда выполнения**: консольное приложение, может запускаться локально или на сервере.
